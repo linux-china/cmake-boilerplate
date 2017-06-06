@@ -5,6 +5,7 @@
 
 ## set internal libraries
 add_library(ct1-welcome-static STATIC welcome.c)
+add_library(sub::welcome ALIAS ct1-welcome-static)
 
 set(SOURCE_FILES main.c)
 
